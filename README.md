@@ -93,7 +93,7 @@ A gente vai usar o **MIT App Inventor** ou o **Kodular** (que tem mais opções 
 
 ✅ **Conclusão**
 
-A gente escolheu esse projeto porque é algo útil e que pode realmente ajudar quem gosta de cozinhar. O **Cookify** vai guardar e mostrar receitas com facilidade, além de ser uma ótima forma de a gente aprender a programar usando ferramentas simples. Mesmo sendo um projeto escolar, dá pra entregar algo que funcione de verdade.<br><br>
+A gente escolheu esse projeto porque é algo útil e que pode realmente ajudar quem gosta de cozinhar. O **Cookify** vai guardar e mostrar receitas com facilidade, além de ser uma ótima forma de a gente aprender a  usando ferramentas simples. Mesmo sendo um projeto escolar, dá pra entregar algo que funcione de verdade.<br><br>
 
 
 👨‍👩‍👧‍👦 **Integrantes do grupo**
