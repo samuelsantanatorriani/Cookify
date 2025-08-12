@@ -104,8 +104,10 @@ A gente escolheu esse projeto porque é algo útil e que pode realmente ajudar q
 
 * @samuelsantanatorriani<br>
 
-* @TheoEggert127<br>
+* @TheoEggert127<br><br>
 
+📱 **protótipo:**<br>
 
+[text](https://marvelapp.com/prototype/11b8944e)
 
 
