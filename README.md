@@ -108,6 +108,6 @@ A gente escolheu esse projeto porque é algo útil e que pode realmente ajudar q
 
 📱 **protótipo:**<br>
 
-[text](https://marvelapp.com/prototype/11b8944e)
+[acessar protótipo](https://marvelapp.com/prototype/11b8944e)
 
 
