@@ -1,113 +1,110 @@
-# Cookify🍴
+# Cookify 🍴
 
+O **Cookify** é um aplicativo que criamos com a ideia de facilitar o dia a dia de quem gosta de cozinhar. A proposta é permitir que qualquer pessoa possa **organizar, compartilhar e encontrar receitas direto do celular**, de um jeito simples, bonito e funcional.
 
-O **Cookify** é um aplicativo que criamos com a ideia de facilitar o dia a dia de quem gosta de cozinhar. A proposta é permitir que qualquer pessoa possa organizar, compartilhar e encontrar receitas direto do celular, de um jeito fácil e rápido.<br><br>
+Agora, vamos desenvolver o app usando **React Native com Expo (via ExpoDev)**, uma ferramenta moderna que permite criar aplicativos Android e iOS com uma única base de código. Com isso, conseguimos mais controle visual e funcionalidades avançadas, além de ser uma ótima oportunidade para aprender programação real com JavaScript.
 
-A gente vai usar o **MIT App Inventor** ou o **Kodular** (que tem mais opções visuais), e vamos salvar as receitas tanto no celular com o **TinyDB**, quanto online com o **Firebase**, pra poder ver as receitas de outras pessoas também.<br><br>
+---
 
 🎯 **Objetivos do App**
 
-* Deixar mais fácil cadastrar e encontrar receitas
+* Facilitar o cadastro e a busca de receitas
+* Permitir a troca de receitas entre os usuários
+* Ajudar na organização de ingredientes e compras
+* Garantir bom desempenho mesmo em celulares simples ou com internet limitada
 
-* Permitir que as pessoas troquem receitas entre si
-
-* Ajudar o usuário a organizar os ingredientes
-
-* Rodar bem até em celulares simples ou com internet limitada<br><br>
-
+---
 
 ⚙️ **Funcionalidades do App**
 
-1. 📝 **Cadastro de Receitas** – Samuel
+1. 📝 **Cadastro de Receitas** – *Samuel*
 
-* Nome da receita
+   * Nome da receita
+   * Categoria (ex: doce, salgado, saudável)
+   * Lista de ingredientes com checkbox
+   * Modo de preparo
+   * Tempo de preparo e número de porções
+   * Foto da comida (tirada na hora ou da galeria)
 
-* Categoria (ex: doce, salgado, saudável)
+2. 👀 **Visualizar Receitas** – *Theo*
 
-* Lista de ingredientes com checkbox
+   * Ver todas as receitas (do usuário e de outros via Firebase)
+   * Exibir detalhes completos com imagem, ingredientes e modo de preparo
 
-* Modo de preparo
+3. 🔎 **Buscar Receitas** – *Guilherme*
 
-* Tempo de preparo e número de porções
+   * Campo de busca por nome da receita
 
-* Foto da comida (tirada na hora ou da galeria)<br><br>
+4. 🛒 **Lista de Compras** – *Maria*
 
+   * Geração automática da lista com ingredientes das receitas escolhidas
+   * Checkbox para marcar itens comprados
 
-2. 👀 **Visualizar Receitas** – Theo
+5. ⭐ **Favoritar Receitas** – *Maria*
 
-* Ver todas as receitas cadastradas (do usuário e de outros, via Firebase)
+   * Marcar/desmarcar receitas como favoritas
+   * Tela de favoritos para fácil acesso
 
-* Exibir os detalhes completos com imagem, ingredientes e preparo<br><br>
+6. 😄 **Sistema de Avaliação** – *Theo*
 
+   * O usuário pode avaliar com estrelas ou emojis (ex: “gostei / não gostei”)
 
-3. 🔎 **Buscar Receitas** – Guilherme
+7. 🧁 **Sistema de Filtros** – *Guilherme*
 
-* Campo de busca pra procurar receitas pelo nome<br><br>
+   * Filtro por categoria (doce, salgado, saudável, etc.)
 
+8. 👨‍🍳 **Modo Passo a Passo** – *Samuel*
 
-4. 🛒 **Lista de Compras** – Maria
+   * Mostra o preparo em etapas, com botões “Próximo” e “Voltar”
+   * Ideal para seguir durante o preparo da receita
 
-* Gera uma lista com os ingredientes da receita
-
-* Checkbox pra marcar o que já foi comprado<br><br>
-
-
-5. ⭐ **Favoritar Receitas** – Maria
-
-* Marcar receitas como favoritas
-
-* Facilita achar elas depois<br><br>
-
-
-6. 😄 **Sistema de Avaliação** – Theo
-
-* O usuário pode dar nota ou escolher emoji tipo “gostei/não gostei”<br><br>
+---
 
 
-7. 🧁 **Sistema de Filtros** – Guilherme
+💻 **Parte Técnica:**
 
-* Permite filtrar receitas por categoria (ex: doces, salgados...)<br><br>
+✅ React Native com Expo
+Vamos criar o app usando React Native com Expo, que permite criar aplicativos modernos para Android e iOS com código em JavaScript.
 
+✅ Compatível com Android e iOS
+O app pode rodar em qualquer celular com Android ou iOS. Para a escola, podemos focar em Android, mas o código serve para os dois.
 
-8. 👨‍🍳 **Modo Passo a Passo** – Samuel
+✅ Login obrigatório com Firebase Authentication
+O usuário precisa fazer login para usar o app. Vamos usar o Firebase Authentication, que permite login por e-mail e senha (ou Google, se quiser).
+Cada receita será salva ligada ao usuário logado.
 
-* Mostra o preparo da receita em etapas
+✅ Banco de dados online com Firebase Firestore
+As receitas serão salvas na nuvem usando o Firebase Firestore. Assim, o usuário pode acessar suas receitas de qualquer lugar.
 
-* Botões de “Próximo” e “Voltar” pra facilitar enquanto cozinha<br><br>
+✅ Armazenamento de imagens com Firebase Storage
+As fotos das receitas (tiradas na hora ou da galeria) serão enviadas e salvas no Firebase Storage.
 
+✅ Armazenamento local com AsyncStorage (opcional)
+Podemos guardar dados temporários, como favoritos ou última busca, dentro do celular usando o AsyncStorage. Mas as receitas principais ficam no Firebase.
 
-💻 **Parte Técnica**
+✅ Interface responsiva e moderna
+As telas serão construídas com componentes do React Native (View, ScrollView, TextInput, FlatList, etc.) e terão um visual simples e fácil de navegar, adaptando-se a vários tamanhos de tela.
 
-* Funciona só em Android
+✅ Navegação entre telas com React Navigation
+Vamos usar a biblioteca React Navigation para o usuário conseguir trocar de tela (ex: login, receitas, detalhes, favoritos...).
 
-* Interface simples e fácil de navegar
+✅ App leve e com bom desempenho
+Mesmo com internet fraca ou celular simples, o app vai funcionar bem, pois a interface é otimizada e os dados são carregados sob demanda.
 
-* Armazena dados com TinyDB (local) e Firebase (nuvem)
-
-* App leve e que roda bem com pouca internet
-
-* Dados dos usuários ficam apenas dentro do app
-
-* Pode ser feito tanto no **MIT App Inventor** quanto no **Kodular**<br><br>
-
+---
 
 ✅ **Conclusão**
 
-A gente escolheu esse projeto porque é algo útil e que pode realmente ajudar quem gosta de cozinhar. O **Cookify** vai guardar e mostrar receitas com facilidade, além de ser uma ótima forma de a gente aprender a  usando ferramentas simples. Mesmo sendo um projeto escolar, dá pra entregar algo que funcione de verdade.<br><br>
+Escolhemos esse projeto porque ele resolve um problema do dia a dia e também serve como uma excelente oportunidade de aprendizado. Com o **Cookify**, qualquer pessoa pode salvar, ver ou compartilhar receitas de forma prática, além de contar com recursos úteis como lista de compras e modo passo a passo. Mesmo sendo um projeto escolar, estamos usando ferramentas profissionais e criando algo que pode realmente funcionar para o público.
 
+---
 
 👨‍👩‍👧‍👦 **Integrantes do grupo**
 
-* @Guilhermesilvaandre<br>
+* @Guilhermesilvaandre
+* @dudex-computer
+* @samuelsantanatorriani
+* @TheoEggert127
 
-* @dudex-computer<br>
-
-* @samuelsantanatorriani<br>
-
-* @TheoEggert127<br><br>
-
-📱 **protótipo:**<br>
-
+📱 **Protótipo:**
 [acessar protótipo](https://marvelapp.com/prototype/11b8944e)
-
-
