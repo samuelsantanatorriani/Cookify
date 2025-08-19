@@ -60,6 +60,36 @@ Agora, vamos desenvolver o app usando **React Native com Expo (via ExpoDev)**, u
 
 ---
 
+🛠 **Necessidades Funcionais**
+
+   Elementos necessários para o funcionamento do app
+
+1. 🌐 **Conexão com a Internet**
+
+   * Acesso via Wi-Fi ou dados móveis
+   * Necessária para publicar, visualizar e avaliar receitas
+
+2. 📸 **Câmera**
+
+   * Captura de fotos das receitas preparadas
+   * Suporte a diferentes resoluções de imagem
+
+3. 🖼️ **Galeria**
+
+   * Seleção de imagens já armazenadas no dispositivo
+   * Permite anexar fotos às receitas publicadas
+
+4. 🔔 **Sistema de Notificações**
+
+   * Envio de alertas sobre comentários, avaliações e novas receitas
+   * Configuração de notificações push pelo sistema operacional
+
+5. 💾 **Armazenamento Interno**
+
+   * Salvamento de receitas favoritas para acesso offline
+   * Armazenamento temporário (cache) de imagens e dados do app
+
+---
 
 💻 **Parte Técnica:**
 
@@ -108,3 +138,4 @@ Escolhemos esse projeto porque ele resolve um problema do dia a dia e também se
 
 📱 **Protótipo:**
 [acessar protótipo](https://marvelapp.com/prototype/11b8944e)
+
